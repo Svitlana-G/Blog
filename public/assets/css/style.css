@@ -34,7 +34,69 @@ header {
     display: block;
     text-align: center;
 }
+header img{
+    width: 100%;
+}
 
 header h2{
     font-size: 3.375rem;
+}
+
+footer{
+    background-color: #000;
+    color: #FFF;
+    padding-top: 1vh;
+}
+
+footer ul{
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+footer ul li a{
+    font-family: 'Fira Code', monospace;
+    color: #FFF;
+}
+
+footer .information li a{
+    letter-spacing: 0.1em;
+    text-transform: uppercase; 
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: royalblue;
+}
+
+footer img{
+    display: block;
+    margin: 0 auto;
+    padding: 11vh 0 2vh 0;
+}
+
+footer p{
+    padding: 0 33%;
+    text-align: center;
+    font-size: .78rem;
+    padding-bottom: 4vh;
+    margin: 0;
+}
+
+.service{
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.service li{
+    padding: 0 1%;
+}
+
+footer p:nth-of-type(2){
+    font-size: .58rem;
+    margin:0;
+    padding-top: 4vh;
 }

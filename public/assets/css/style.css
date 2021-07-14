@@ -1,0 +1,40 @@
+
+/* font-family: 'Fira Code', monospace;
+font-family: 'Poppins', sans-serif; */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 6vh 0;
+    margin: 0;
+}
+
+nav ul li:first-child{
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.25rem;
+    padding-right: 10rem;
+}
+
+header {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+header h2{
+    font-size: 3.375rem;
+}

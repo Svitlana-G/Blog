@@ -1,16 +1,49 @@
+const fs = require('fs')
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 3005
-
+const PORT = process.env.PORT || 3060
 
 const data = require('./website.json')
+const { url } = require('inspector')
+const { title } = require('process')
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
+// app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
 app.get('/', (req, res) => {
     res.render('index', { data })
 })
+
+app.post('/add', (req, res) => {
+    // console.log(req)
+    console.log(req.body)
+    idCurrent = data.length
+    console.log(url)
+    data.push({
+        id: idCurrent,
+        url: req.body.url,
+        title: req.body.myTitle,
+        body: req.body.body,
+        // published_at: title,
+        // dduration: title,
+        author: req.body.author,
+        author_bild: req.body.author_bild
+    })
+    console.log(data)
+    fs.writeFile('./website.json', JSON.stringify(data), 'utf-8', (err) => {
+        if (err) throw err
+    })
+    res.redirect('/')
+})
+
+
+app.get('/newArticle', (req, res) => {
+    res.render('newArticle', { data })
+})
+
 
 app.get('/:article', (req, res) => {
     console.log(req.params.article)
@@ -19,8 +52,6 @@ app.get('/:article', (req, res) => {
     res.render('article', { article: currentArticle[0], data })
 })
 
-app.get('/new', (req, res) => {
-    res.render('new')
-})
+
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))

@@ -1,6 +1,52 @@
 <%- include('./partials/head') %>
     <header>
-        <img src="/assets/img/header.jpg" alt="">
-        <h2>A few words about this blog platform, Ghost, and how this site was made</h2>
+        <h2>
+            <%= data[0].title %>
+        </h2>
+        <img class=imgArticle src="/assets/img/<%= data[0].url %> " alt="">
     </header>
+    <div class="article">
+        <div class="flex">
+            <div class="author">
+                <div>
+                    <img src="<%= article.author_bild  %> " alt="">
+                </div>
+                <div class="info">
+                    <h4>
+                        <%= article.author %>
+                    </h4>
+                    <p>
+                        <%= article.published_at %>
+                            <%= article.duration %> min read
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/img/Vector.png" alt="">
+            </div>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit tempus erat egestas efficitur. In hac
+            habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra.
+        </p>
+        <p>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis
+            posuere
+            ligula. In eu dui molestie, molestie lectus eu, semper lectus.
+        </p>
+        <p>
+            Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula
+            suscipit
+            finibus. Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos.
+        </p>
+        <p>
+            Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam posuere maximus dui et fringilla.
+        </p>
+    </div>
+
+
+
+
     <%- include('./partials/footer') %>

@@ -138,3 +138,28 @@ h3{
     text-align: center;
     padding: 0 17%;
 }
+/* Styling article */
+.author {
+    display: flex;
+}
+
+.author img{
+    border-radius: 50%;
+}
+.info{
+    padding-left: 2%;
+}
+
+.info h4, p{
+    margin: 0;
+    
+}
+.article {
+    margin: 0 25%;
+    padding: 2vh 0;
+    border-top: 1px solid #000;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}

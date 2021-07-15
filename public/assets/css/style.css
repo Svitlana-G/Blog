@@ -40,6 +40,7 @@ header img{
 
 header h2{
     font-size: 3.375rem;
+    padding-bottom: 6vh;
 }
 
 footer{
@@ -84,6 +85,7 @@ footer p{
     font-size: .78rem;
     padding-bottom: 4vh;
     margin: 0;
+    font-family: 'Fira Code', monospace
 }
 
 .service{
@@ -99,4 +101,40 @@ footer p:nth-of-type(2){
     font-size: .58rem;
     margin:0;
     padding-top: 4vh;
+}
+
+h3{
+    text-align: center;
+    font-size: 2.75rem;
+    border-top: 1px solid #000;
+    margin: 0 25%;
+    padding: 6vh 0 4vh 0;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 0 25%;  
+   
+}
+
+.grid a{
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: #000;
+}
+
+.grid a:hover{
+    text-decoration: underline;
+    text-decoration-color: royalblue;
+}
+
+.grid img{
+    width: 100%;
+}
+
+.grid p{
+    text-align: center;
+    padding: 0 17%;
 }

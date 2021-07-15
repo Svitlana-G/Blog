@@ -1,50 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li><img src="assets/img/nordic.png" alt=""></li>
-            <li><a href="#">All</a></li>
-            <li><a href="#">NEW ARTICLE</a></li>
-        </ul>
-    </nav>
+<%- include('./partials/head') %>
     <header>
-        <img src="/assets/img/header.jpg" alt="">
-        <h2>A few words about this blog platform, Ghost, and how this site was made</h2>
+        <img src="/assets/img/<%= data[0].url %> " alt="">
+        <h2>
+            <%= data[0].title %>
+        </h2>
     </header>
-    <footer>
-        <ul class="information">
-            <li><a href="#">Digital product design</a></li>
-            <li><a href="#">Remote work</a></li>
-            <li><a href="#">UX design</a></li>
-            <li><a href="#">Distributed teams</a></li>
-            <li><a href="#">Creativity</a></li>
-            <li><a href="#">Strategy</a></li>
-            <li><a href="#">Suspense</a></li>
-            <li><a href="#">Growth</a></li>
-        </ul>
-        <img src="assets/img/nordic2.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit tempus erat egestas efficitur. In hac
-            habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. </p>
-        <ul class="service">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">RSS</a></li>
-        </ul>
-        <p> © 2012–2020 Nordic Rose Co. <br>All rights reserved.</p>
-    </footer>
-</body>
+    <h3> All articles</h3>
+    <div class="grid">
+        <% for(let i=1; i<data.length; i++){%>
+            <div>
+                <img src="/assets/img/<%= data[i].url %> " alt="">
+                <p>
+                    <a href="#">
+                        <%= data[i].title %>
+                    </a>
+                </p>
 
-</html>
+            </div>
+
+            <% } %>
+
+    </div>
+
+    <%- include('./partials/footer') %>

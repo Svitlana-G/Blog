@@ -1,12 +1,12 @@
 <%- include('./partials/head') %>
-
     <form action="/add" method="post">
-        <input type="text" placeholder="Title" name="myTitle">
-        <input type="url" name="url" placeholder="Url Picture">
-        <input type="text" name="author" placeholder="Author">
-        <input type="url" name="author_bild" placeholder="Author Picture">
-        <textarea name="body" cols="30" rows="10" placeholder="Write your article here....."></textarea>
+        <input type="text" placeholder="Title" name="myTitle" required>
+        <input type="url" name="url" placeholder="Url Picture" required>
+        <input type="text" name="author" placeholder="Author" required>
+        <input type="url" name="author_bild" placeholder="Author Picture" required>
+        <textarea name="body" cols="30" rows="10" placeholder="Write your article here....." required></textarea>
         <input type="submit" value="Send article">
     </form>
+    <%- include('./partials/read') %>
 
-    <%- include('./partials/footer') %>
+        <%- include('./partials/footer') %>

@@ -1,0 +1,22 @@
+<div class="line">
+    <div class="line1"></div>
+    <img class="eyes" src="/assets/img/eyes.png" alt="">
+    <div class="line2"></div>
+</div>
+
+<h3>What to read next</h3>
+<div class="grid3">
+    <% for(let i=data.length-7; i<data.length; i++){%>
+        <div>
+            <img src="/assets/img/<%= data[i].url %> " alt="">
+            <p>
+                <a href="/<%= data[i].id %> ">
+                    <%= data[i].title %>
+                </a>
+            </p>
+
+        </div>
+
+        <% } %>
+
+</div>

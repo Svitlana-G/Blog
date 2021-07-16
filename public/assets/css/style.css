@@ -50,6 +50,7 @@ footer{
     background-color: #000;
     color: #FFF;
     padding-top: 1vh;
+    margin-top: 5vh;
 }
 
 footer ul{
@@ -106,10 +107,14 @@ footer p:nth-of-type(2){
     padding-top: 4vh;
 }
 
+.lineAll{
+    border-top: 1px solid #000;
+    margin: 0 25%;
+}
+
 h3{
     text-align: center;
     font-size: 2.75rem;
-    border-top: 1px solid #000;
     margin: 0 25%;
     padding: 6vh 0 4vh 0;
 
@@ -117,29 +122,29 @@ h3{
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
-    padding: 0 25%;  
-   
+    grid-gap: 30px;
+    padding: 0 25%;    
 }
 
-.grid a{
+.grid a, .grid3 a{
     text-decoration: none;
     font-size: 1.375rem;
     color: #000;
 }
 
-.grid a:hover{
+.grid a:hover, .grid3 a:hover{
     text-decoration: underline;
     text-decoration-color: royalblue;
 }
 
-.grid img{
+.grid img, .grid3 img{
     width: 100%;
 }
 
-.grid p{
+.grid p, .grid3 p{
     text-align: center;
-    padding: 0 17%;
+    padding: 2vh 17%;
+    margin: 0;
 }
 /* Styling article */
 .author {
@@ -153,7 +158,7 @@ h3{
     padding-left: 2%;
 }
 
-.info h4, p{
+.info h4{
     margin: 0;
     
 }
@@ -190,4 +195,36 @@ input[type="submit"]{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.125rem;
     font-weight: bold;   
+    width: 91%;
 }
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3%;
+    padding: 0 11%;    
+}
+
+.eyes {
+    width: 5%;
+    margin: 0 auto;
+    display: block;
+}
+
+.line1{
+    border-bottom: 1px solid #000;
+    height: 3vh;
+    width: 50%;
+}
+
+.line2{
+    border-bottom: 1px solid #000;
+    height: 3vh;
+    width: 50%;
+}
+
+.line{
+    display: flex;
+    margin-top: 5vh;
+}
+

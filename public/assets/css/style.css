@@ -13,8 +13,9 @@ nav ul{
     display: flex;
     list-style: none;
     align-items: center;
-    padding: 6vh 0;
+    padding: 4vh 0;
     margin: 0;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
 }
 
 nav ul li:first-child{
@@ -31,19 +32,20 @@ nav ul li a{
     padding-right: 10rem;
 }
 
-header {
+.all {
     width: 60%;
-    margin: 0 auto;
+    margin: 6vh auto;
     display: block;
     text-align: center;
 }
-header img{
+.all img{
     width: 100%;
 }
 
-header h2{
+.all h2{
     font-size: 3.375rem;
     padding-bottom: 6vh;
+    line-height: 100%;
 }
 
 footer{
@@ -111,14 +113,13 @@ footer p:nth-of-type(2){
     border-top: 1px solid #000;
     margin: 0 25%;
 }
-
 h3{
     text-align: center;
     font-size: 2.75rem;
     margin: 0 25%;
     padding: 6vh 0 4vh 0;
-
 }
+
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -170,8 +171,29 @@ h3{
 .flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.articleHeader img{
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+.articleHeader h2 {
+    width: 60%;
+    margin: 6vh auto;
+    text-align: center;
+    font-size: 3.375rem;
+    padding-bottom: 6vh;
+    line-height: 100%;
 }
 /* styling newArticle */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    padding: 6vh 0 2vh 0;
+}
 
 input, textarea{
     background-color: #E5E5E5;

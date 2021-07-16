@@ -1,7 +1,8 @@
 <%- include('./partials/head') %>
+    <h1>Add New Article</h1>
     <form action="/add" method="post">
         <input type="text" placeholder="Title" name="myTitle" required>
-        <input type="url" name="url" placeholder="Url Picture" required>
+        <input type="text" name="url" placeholder="Url Picture" required>
         <input type="text" name="author" placeholder="Author" required>
         <input type="url" name="author_bild" placeholder="Author Picture" required>
         <textarea name="body" cols="30" rows="10" placeholder="Write your article here....." required></textarea>

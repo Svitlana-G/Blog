@@ -1,5 +1,5 @@
 <%- include('./partials/head') %>
-    <header>
+    <header class="all">
         <img src="/assets/img/<%= data[0].url %> " alt="">
         <h2>
             <%= data[0].title %>
@@ -12,7 +12,7 @@
             <div>
                 <img src="/assets/img/<%= data[i].url %> " alt="">
                 <p>
-                    <a href="/<%= data[i].id %> ">
+                    <a href="/article/<%= data[i].id %> ">
                         <%= data[i].title %>
                     </a>
                 </p>

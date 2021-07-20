@@ -41,9 +41,9 @@ app.get('/newArticle', (req, res) => {
 
 
 app.get('/article/:article', (req, res) => {
-    console.log(req.params.article)
+    // console.log(req.params.article)
     let currentArticle = data.filter(ele => ele.id == req.params.article)
-    console.log(currentArticle)
+    // console.log(currentArticle)
     res.render('article', { article: currentArticle[0], data, menu: "Blog" })
 
 })

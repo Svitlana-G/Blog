@@ -163,6 +163,10 @@ h3{
     margin: 0;
     
 }
+
+.info p{
+    width: 30vw;
+}
 .article {
     margin: 0 25%;
     padding: 2vh 0;
